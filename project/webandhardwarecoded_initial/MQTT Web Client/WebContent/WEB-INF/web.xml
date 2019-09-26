@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>KSSEM</display-name>
+  
+  <servlet>
+  	<servlet-name>ON</servlet-name>
+  	<servlet-class>com.aklc.servlet.LEDServlet</servlet-class>  	
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ON</servlet-name>
+  	<url-pattern>/ledon</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>OFF</servlet-name>
+  	<servlet-class>com.aklc.servlet.LEDOffServlet</servlet-class>  	
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>OFF</servlet-name>
+  	<url-pattern>/ledoff</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>TEMP</servlet-name>
+  	<servlet-class>com.aklc.servlet.TemperatureServlet</servlet-class>  	
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>TEMP</servlet-name>
+  	<url-pattern>/temperature</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>FIRE</servlet-name>
+  	<servlet-class>com.aklc.servlet.FireServlet</servlet-class>  	
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>FIRE</servlet-name>
+  	<url-pattern>/fire</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
