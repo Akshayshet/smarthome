@@ -1,2 +1,3 @@
 # smarthome
-This projects i developed in Xon Labs
+Hardware requirement- raspberry pi,led,flamesensor, temperature sensor
+Software requirements-mqtt,paho
